@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Date Picker</title>
+    <link rel="shortcut icon" href="">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="../StyleSheets/jquery.datepick.css">
+    <script type="text/javascript" src="../scripts/jquery.plugin.js"></script> 
+    <script type="text/javascript" src="../scripts/jquery.datepick.js"></script>
+    <!-- Snowstorm Script -->
+    <!-- <script src="../scripts/snowstorm.js"></script> -->
+    
+    <style>
+        body
+        {
+            padding-top:50px;
+            background-image: url("../images/uncharted-4-beach.gif");
+        }
+        .starter-template
+        {
+            padding:40px 15px;
+            text-align:center;
+        }
+        #main-container
+        {
+            background-color: #DFE4E5;
+            border: 3px solid #959EA0;
+            border-radius: 25px;
+            box-shadow: 0px 0px 0px 5px #DFE4E5;
+            margin-top: 50px;
+            padding-bottom: 10px;
+            text-align: center;
+        }
+    </style>
+
+    <!--[if IE]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    
+    <!-- My scripts -->
+    <script src="scripts/datepicker.js"></script>
+    
+</head>
+
+<body>
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Date Picker</a>
+            </div>
+
+            <div class="collapse navbar-collapse">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="#">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div><!--.nav-collapse -->
+        </div>
+    </nav>
+
+    <div class="container" id="main-container">
+        <div class="starter-template">
+            <p class="lead" id="p-date">
+                Let's find a daily devotion page using the jQuery Date Picker!
+            </p>
+        </div>
+        <div id="error" class="alert alert-danger" style="display:none;">
+        </div>
+    </div>
+</body>
+</html>

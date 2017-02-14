@@ -1,0 +1,502 @@
+<!doctype html>
+<html>
+<head>
+
+	<title>Albert's BBC</title>
+
+	<meta charset="utf-8" />
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	
+	<style type="text/css">
+	
+	body
+	{
+		margin: 0px;
+		font-family: arial, helvetica, sans-serif;
+	}
+	
+	#bbc-menu
+	{
+		background-color: #6B0100;
+		width: 100%;
+		height: 40px;
+		color: white;
+	}
+	
+	.fixed-width
+	{
+		width: 1050px;
+		margin: 0 auto;
+	}
+	
+	#bbc-logo
+	{
+		float: left;
+		height: 39px;
+	}
+	
+	#signin
+	{
+		font-weight: bold;
+		font-size: 0.9em;
+		padding: 3px 80px 8px 20px;
+		float: left;
+		border-right: 1px solid #990000;
+	}
+	
+	#signin img
+	{
+		position: relative;
+		top: 4px;
+	}
+	
+	a.sign-in-link:link, a.sign-in-link:visited, a.sign-in-link:hover, a.sign-in-link:active
+	{
+		color: white;
+		text-decoration: none;
+	}
+
+	#top-menu-div
+	{
+		float: left;
+	}
+	
+	#top-menu-div ul
+	{
+		margin: 0px;
+		padding: 0px;
+	}
+	
+	#top-menu-div li
+	{
+		list-style: none;
+		font-weight: bold;
+		font-size: 0.8em;
+		border-right: 1px solid #990000;
+		padding: 12px 15px 12px 15px;
+		float: left;
+	}
+
+	a.list-link:link, a.list-link:visited, a.list-link:hover, a.list-link:active
+	{
+		color: white;
+		text-decoration: none;
+	}
+	
+	#search-div
+	{
+		float:left;
+		padding: 8px;
+	}
+	
+	#search-div input
+	{
+		height: 17px;
+		border: none;
+		font-size: 0.9em;
+		font-weight: bold;
+		padding-left: 5px;
+		background-image: url("images/search.JPG");
+		background-repeat: no-repeat;
+		background-position: right;
+	}
+	
+	.break
+	{
+		clear: both;
+	}
+
+	#news-menu
+	{
+		background-color: #830200;
+		width: 100%;
+		height: 90px;
+		color: white;
+	}
+	
+	#news-menu p
+	{
+		margin: 0px;
+		padding: 10px 0px 0px 0px;
+		font-size: 2.7em;
+		float: left;
+	}
+	
+	#uk
+	{
+		font-size: 0.6em;
+		padding-left: 10px;
+	}
+	
+	#rss
+	{
+		float: right;
+		padding-top: 35px;
+	}
+	
+	#rss img
+	{
+		height: 14px;
+	}
+	
+	#category-menu
+	{
+	
+	}
+	
+	#category-menu ul
+	{
+		margin: 6px 0 0 0;
+		padding: 5px 0 0 5px;
+		background-color: #2E090C;
+		height: 19px;
+	}
+	
+	#category-menu li
+	{
+		list-style: none;
+		font-size: 0.8em;
+		border-right: 1px solid #990000;
+		padding: 0px 6px;
+		float: left;
+	}
+	
+	.selected
+	{
+		background-color: #EDEDED;
+		color: #666666;
+		height: 19px;
+		position: relative;
+		top: -5px;
+		padding-top: 5px !important;
+	}
+	
+	#content-div
+	{
+		width: 100%;
+		color: #4D4D4D;
+		font-size: 0.75em;
+	}
+	
+	#content-div h1
+	{
+		color: #1F4F82;
+		font-size: 2.5em;
+	}
+	
+	.headline-image
+	{
+		float: left;
+	}
+	
+	.content-item
+	{
+		position: relative;
+		left: 10px;
+		top: -13px;
+		width: 275px;
+		font-size: 1.1em;
+		float: left;
+	}
+	
+	.content-item a
+	{
+		color: #1F4F82;
+	}
+	
+	a
+	{
+		text-decoration: none;
+	}
+	
+	a:hover
+	{
+		text-decoration: underline;
+	}
+	
+	.play-link
+	{
+		background-image: url("images/play-button.JPG");
+		background-repeat: no-repeat;
+		background-position: left center;
+		padding-left: 20px;
+	}
+	
+	.sound-link
+	{
+		background-image: url("images/sound-button.JPG");
+		background-repeat: no-repeat;
+		background-position: left center;
+		padding-left: 20px;
+	}
+	
+	.links
+	{
+		line-height: 1.55em;
+	}
+	
+	#watch-listen
+	{
+		background-color: #EEEEEE;
+		float: left;
+		position: relative;
+		top: -80px;
+		left: 20px;
+		width: 340px;
+	}
+	
+	#watch-listen ul
+	{
+		padding: 0 0 0 10px;
+	}
+	
+	#watch-listen li
+	{
+		list-style: none;
+		padding: 5px 0 5px 0px;
+	}
+	
+	h2
+	{
+		color: #505050;
+		margin: 10px 0px 10px 10px;
+		font-size: 2em;
+	}
+	
+	#menu-image
+	{
+		float:right;
+		margin: 20px 10px 0px 0px;
+	}
+	
+	.left-arrow
+	{
+		border-right: 1px solid white;
+		float: left;
+	}
+	
+	.watch-listen-block
+	{
+		float: left;
+		background-color: #D1700E;
+		width: 145px;
+		border-right: 1px solid white;
+	}
+	
+	.watch-listen-block a
+	{
+		color: white;
+	}
+	
+	.watch-listen-block p
+	{
+		margin: 6px 7px 5px 7px;
+	}
+	
+	.live-link
+	{
+		background-image: url("images/live.JPG");
+		background-repeat: no-repeat;
+		background-position: left center;
+		padding-left: 35px;
+		font-size: 1.1em;
+	}
+	
+	.live-li
+	{
+		border-bottom: 1px solid #DDDDDD;
+	}
+	
+	</style>
+
+</head>
+
+<body>
+
+	<div id="container">
+	
+		<div id="bbc-menu">
+		
+			<div class="fixed-width">
+			
+				<div id="bbc-logo">
+				
+					<a href="http://www.bbc.co.uk/" title="British Broadcasting Corporation">
+						<img src="images/bbc-logo.JPG" alt="BBC" />
+					</a>
+					
+				</div>
+			
+				<div id="signin">
+				
+					<a href="https://ssl.bbc.com/id/signin?ptrt=http%3A%2F%2Fwww.bbc.com%2Fnews%2Fuk" class="sign-in-link">
+						<img src="images/sign-in.JPG" alt="Sign in" />Sign in
+					</a>
+				
+				</div>
+				
+				<div id="top-menu-div">
+				
+					<ul>
+					
+						<li><a href="http://www.bbc.com/news/" class="list-link">News</a></li>
+						<li><a href="http://www.bbc.com/sport/" class="list-link">Sports</a></li>
+						<li><a href="http://www.bbc.com/weather/" class="list-link">Weather</a></li>
+						<li><a href="http://shop.bbc.com/" class="list-link">Shop</a></li>
+						<li><a href="http://www.bbc.com/earth/" class="list-link">Earth</a></li>
+						<li><a href="http://www.bbc.com/travel/" class="list-link">Travel</a></li>
+						<li>More...</li>
+					
+					</ul>
+				
+				</div>
+				
+				<div id="search-div">
+				
+					<input type="text" placeholder="Search..."/>
+				
+				</div>
+				
+			</div>
+		
+		</div>
+	
+		<div class="break"></div>
+	
+		<!-- Second menu starts here -->
+		<div id="news-menu">
+		
+			<div class="fixed-width">
+			
+				<p>NEWS<span id="uk">UK</span></p>
+			
+				<div id="rss">
+			
+					RSS <img src="images/rss.JPG" alt="rss.jpg" />
+			
+				</div>
+
+				<div class="break"></div>
+
+				<div id="category-menu">
+				
+					<ul>
+					
+						<li>Home</li>
+						<li>World</li>
+						<li class="selected">UK</li>
+						<li>England</li>
+						<li>N. Ireland</li>
+						<li>Scotland</li>
+						<li>Wales</li>
+						<li>Business</li>
+						<li>Politics</li>
+						<li>Health</li>
+						<li>Education</li>
+						<li>Sci/Environment</li>
+						<li>Technology</li>
+						<li style="border-right: none">Entertainment & Arts</li>
+
+					
+					</ul>
+				
+				</div>
+			
+			</div>
+		
+		</div>
+	
+		<div class="break"></div>
+	
+		<div id="content-div">
+	
+			<div class="fixed-width">
+			
+				<p><b>2 April 2014</b> Last updated at 14:13</p>
+				
+				<h1>Pollution to spread across England</h1>
+			
+				<img class="headline-image" src="images/headline-image.JPG" />
+			
+				<div class="content-item">
+				
+					<p>Health warnings have been issued by the government as pollution 
+					spreading across England is forecast to hit high levels.</p>
+				
+					<p class="links">
+						<a class="play-link" href="http://web.archive.org/web/20140402131524/http://www.bbc.co.uk/news/uk-26848488">
+						Why are pollution levels so high? </a> <br />
+					
+						<a class="play-link" href="http://web.archive.org/web/20140402131524/http://www.bbc.co.uk/news/science-environment-26848489">
+						Saharan dust visible on cars </a> <br />
+						
+						<a class="play-link" href="http://web.archive.org/web/20140402131524/http://www.bbc.co.uk/news/health-26850177">
+						How Saharan dust reached the UK Watch What will pollution do to us?
+						</a> <br />
+						
+						<a class="sound-link" href="http://web.archive.org/web/20140402131524/http://www.bbc.co.uk/news/uk-26847723">
+						Air pollution a 'serious issue' </a>
+					</p>
+				
+				
+				</div>
+			
+			</div>
+	
+			<div id="watch-listen">
+			
+				<img src="images/navigation-menu.JPG" id="menu-image"/>
+				
+				<h2>Watch/Listen</h2>
+				
+				<img src="images/left-arrow.JPG" class="left-arrow"/>
+			
+				<div class="watch-listen-block">
+				
+					<img src="images/menu-picture-1.JPG">
+					
+					<p>
+					<a href="http://web.archive.org/web/20140402131524/http://www.bbc.co.uk/news/uk-26849948">
+					Titanic letter could fetch £100,000</a>
+					</p>
+				
+				</div>
+				
+				<div class="watch-listen-block">
+				
+					<img src="images/menu-picture-2.JPG">
+					
+					<p>
+					<a href="http://web.archive.org/web/20140402131524/http://www.bbc.co.uk/news/uk-england-dorset-26845537">
+					The housing estate delivering its own mail</a>
+					</p>
+				
+				</div>
+			
+				<img src="images/right-arrow.JPG" />
+			
+				<ul>
+				
+					<li class="live-li"><a href="" class="live-link">BBC News Channel</a></li>
+					
+					<li class="live-li"><a href="" class="live-link">Radio 5 Live</a></li>
+					
+					<li><a href="" class="live-link">Osborne questioned on budget</a></li>
+				
+				</ul>
+			
+			</div>
+	
+	
+		</div>
+	
+	
+	</div>
+	
+
+</body>
+
+
+
+</html>
