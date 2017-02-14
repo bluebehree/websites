@@ -1,3 +1,7 @@
-# websites
+# Web Pages
 
-<p>Just a little bit of what I've been dabbling around with. Feel free to take a look!</p>
+<p>
+Just a little bit of what I've been dabbling around with. Feel free to take a look!
+</p>
+
+# Folders

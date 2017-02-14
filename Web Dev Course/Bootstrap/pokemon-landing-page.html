@@ -18,94 +18,8 @@
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     
-	<style>
-	
-	body
-	{
-		padding-top: 50px;
-	}
-	
-	#poke-head
-	{
-		font-size: 140%;
-	}
-	
-	#main-container
-	{
-		background-image: url("images/sun-moon-bg.jpg");
-		width: 100%;
-		background-size: cover;
-		background-position: center;
-	}
-	
-	.info-column
-	{
-		background-color: #DFE4E5;
-		border: 3px solid #959EA0;
-		border-radius: 25px;
-		box-shadow: 0px 0px 0px 5px #DFE4E5;
-		padding-bottom: 10px;
-		text-align: center;
-	}
-	
-	#main-content
-	{
-		font-size: 250%;
-	}
-	
-	.bold
-	{
-		font-weight: bold;
-	}
-	
-	#submit-button
-	{
-		margin-top: 20px;
-	}
-	
-	.center
-	{
-		text-align: center;
-	}
-	
-	#sub-container-1
-	{
-		background-image: url("images/pikachu-bg.jpg");
-		width: 100%;
-		background-size: cover;
-		background-position: center;
-	}
-	
-	#about-title
-	{
-		margin-top: 50px;
-	}
-	
-	.about-column
-	{
-		padding-bottom: 10px;
-		text-align: center;
-	}
-	
-	.red-title
-	{
-		color: red;
-		font-size: 90%;
-	}
-	
-	.margin-TOP
-	{
-		margin-top: 20px;
-	}
-	
-	#sub-container-2
-	{
-		width: 100%;
-		background-color: white;
-	}
-	
-	</style>
-    
+	<!-- My stylesheets -->
+   <link rel="stylesheet" type="text/css" href="css/pokemon-lp.css">
     
 </head>
   
@@ -228,6 +142,7 @@
 		<div class="row center">
 	
 			<h1 class="center" id="about-title">About Pokémon Sun & Moon</h1>
+			
 			<p class="lead center">
 			Pokémon Sun & Pokémon Moon are the first set of Generation VII Pokémon games, coming for the Nintendo 3DS worldwide in 2016.
 			</p>
@@ -252,21 +167,29 @@
 			<div class="col-md-2 col-md-offset-1 about-column">
 				
 				<h2><span class="red-title">New Pokémon Forms!</span></h2>
+				
 				<h3><span class="glyphicon glyphicon-cog"></span>Alolan Forms</h3>
+				
 				<img src="images/alolan-raichu.jpg" class="img-responsive" />
+				
 				<p class="lead center margin-TOP">Some Pokémon species have uniquely adapted to the microclimates of the Alola region, becoming what is known as 
 				a regional variant of their species.</p>
 				
 			</div>
 			
 			<div class="col-md-3 col-md-offset-1 about-column">
+			
 				<h2><span class="red-title">Additional Challenges!</span></h2>
+				
 				<h3><span class="glyphicon glyphicon-dashboard"></span>Island Challenge</h3>
+				
 				<img src="images/island-challenge.jpg" class="img-responsive" />
+				
 				<p class="lead center margin-TOP">The island challenge is a rite in which 
 				players travel through the four islands of Alola with the goal of becoming the strongest Trainer, known as the island challenge 
 				champion. In order to complete the island challenge, players must overcome each island's unique trials which may include, but are not 
 				limited to, finding items, completing tests of knowledge, and battling with Pokémon.</p>
+				
 			</div>
 		
 		</div>
@@ -290,14 +213,8 @@
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/bootstrap.min.js"></script>
     
-    <script>
-    
-    var windowHeight = $(window).height();
-    $("#main-container").css("min-height", windowHeight - 50);
-    $("#sub-container-1").css("min-height", windowHeight - 50);
-    $("#sub-container-2").css("min-height", windowHeight / 4);
-    
-    </script>
+    <!-- My scripts -->
+    <script src="js/pokemon-lp.js"></script>
     
   </body>
   
